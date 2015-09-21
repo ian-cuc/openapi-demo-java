@@ -63,11 +63,11 @@ public class EventChangeReceiveServlet extends HttpServlet {
 		JSONObject plainTextJson = JSONObject.parseObject(plainText);		
 		String eventType = plainTextJson.getString("EventType");
 		switch (eventType){
-		case "org_user_add"://do something
+		case "user_add_org"://do something
 			break;
-		case "org_user_modify"://do something
+		case "user_modify_org"://do something
 			break;
-		case "org_user_leave":// do something
+		case "user_leave_org":// do something
 			break;
 		case "check_url"://do something
 		default : //do something
